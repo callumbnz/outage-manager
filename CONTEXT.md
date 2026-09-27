@@ -23,7 +23,7 @@ The set of Services and Customers affected by a Maintenance or Incident, derived
 A device, interface or circuit recorded in Boris.
 
 **Service / Customer**:
-A Service is delivered over Network Elements. The Customer is who owns it, and each Customer maps to a Zendesk organisation.
+A Service is delivered over Network Elements. The Customer is who owns it.
 
 **Post-Incident Report (PIR)**:
 A written analysis of an Incident that Reviewers must approve before it is published.
@@ -32,11 +32,12 @@ _Avoid_: post-mortem (acceptable as the public-facing name on Status.io), RCA
 **Author / Reviewer / Approver**:
 The Author writes a Maintenance, Incident or PIR. A Reviewer is chosen by the Author to approve a PIR, and every Reviewer must approve. An Approver signs off a Maintenance, and one is enough.
 
-**Support Notification**:
-The internal Zendesk ticket that tells the support team about a Maintenance or Incident.
-
-**Customer Notification**:
-An optional proactive notice to affected Customers through Zendesk, which the Author chooses to send.
-
 **Draft Incident**:
 An Incident created automatically from a PagerDuty webhook, which an engineer has not yet confirmed.
+
+**Status Page Notice**:
+A message published to Status.io (an incident, a scheduled maintenance, or a PIR link) that Status.io delivers to subscribers.
+
+**Provider Notice**:
+A maintenance or outage notification received from an upstream provider/carrier about their network, which may affect Devoli Circuits. It is not a Maintenance (that is Devoli's own work) until it is linked.
+_Avoid_: carrier maintenance, third-party change
