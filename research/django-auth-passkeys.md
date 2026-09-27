@@ -102,7 +102,7 @@ allauth supports both, and a user can have both [AA-MFA][AA-SRC]:
   - override allauth's templates (`account/*.html`, `mfa/*.html`) to extend our base layout and style. The logic stays in allauth;
   - listen for `allauth.error` to show a friendly message (for example "passkey cancelled").
 - **Headless** (`allauth.headless`, `HEADLESS_ONLY`) is a JSON API meant for SPA/mobile clients [AA-HL]. It would mean writing all our own auth JS against the API, which is unnecessary for an HTMX app. **Use the template approach.**
-- CSP: allauth's MFA templates pass WebAuthn options through a `json_script` data element plus static JS, so a strict CSP with `script-src 'self'` is feasible (verify during the build). django-otp-webauthn explicitly advertises strict-CSP compatibility [OTPW].
+- CSP: allauth's MFA templates pass WebAuthn options through `{{ js_data|json_script }}` and `<script type="application/json" data-allauth-onload=...>` data blocks (not executable inline JS) plus static JS files [AA-SRC `templates/mfa/webauthn/*.html`], so a strict CSP with `script-src 'self'` is feasible (verify during the build). django-otp-webauthn explicitly advertises strict-CSP compatibility [OTPW].
 
 ## 7. Password policy, hashing and brute-force protection
 
