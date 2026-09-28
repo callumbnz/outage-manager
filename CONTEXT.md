@@ -105,3 +105,12 @@ A Provider Notice that couldn't be parsed or matched automatically and is waitin
 
 **Ignored**:
 The final state of a Provider Notice that an engineer judged irrelevant to Devoli.
+
+**Evidence Item**:
+An immutable captured artefact (a graph image or data) from a monitoring source, covering an Incident's time range, used in a PIR.
+
+**Evidence Spec**:
+An Admin-configured rule that says which Evidence Items to capture for a given type of Network Element.
+
+**Evidence Source**:
+A monitoring system that can supply Evidence Items (LibreNMS, Grafana, Kentik).
