@@ -22,6 +22,12 @@ The set of Services and Customers affected by a Maintenance or Incident, derived
 **Impact Level**:
 NO-IMPACT, REDUCED-REDUNDANCY, DEGRADED or OUTAGE, assessed for each affected Service.
 
+**Impact Snapshot**:
+The Author-confirmed list of affected Services and their Impact Levels, saved on a Maintenance or Incident at submission or publication.
+
+**Component Mapping**:
+The rules that translate Services into Status.io components (product types) and containers (regions).
+
 **Priority**:
 The urgency/severity of an Incident, P1 (highest) to P4. It is separate from Impact.
 _Avoid_: SEV, severity level
@@ -73,7 +79,7 @@ The final state of a PIR that an Approver decided is not needed, with a recorded
 An Incident created automatically from a PagerDuty webhook, which an engineer has not yet confirmed.
 
 **Status Page Notice**:
-A message published to Status.io (an incident, a scheduled maintenance, or a PIR link) that Status.io delivers to subscribers.
+A message published to Status.io (an incident, a scheduled maintenance, an update to either, or a PIR link) that Status.io delivers to subscribers.
 
 **Provider Notice**:
 A maintenance or outage notification received from an upstream provider/carrier about their network, which may affect Devoli Circuits. It is not a Maintenance (that is Devoli's own work) until it is linked.
