@@ -78,3 +78,12 @@ A message published to Status.io (an incident, a scheduled maintenance, or a PIR
 **Provider Notice**:
 A maintenance or outage notification received from an upstream provider/carrier about their network, which may affect Devoli Circuits. It is not a Maintenance (that is Devoli's own work) until it is linked.
 _Avoid_: carrier maintenance, third-party change
+
+**Provider-driven Maintenance**:
+A Maintenance created from a Provider Notice. It is exempt from the Notice Period because the timing is set by the provider.
+
+**Needs Triage**:
+A Provider Notice that couldn't be parsed or matched automatically and is waiting for an engineer.
+
+**Ignored**:
+The final state of a Provider Notice that an engineer judged irrelevant to Devoli.
