@@ -63,6 +63,12 @@ The Author writes a Maintenance, Incident or PIR. A PIR has exactly one Reviewer
 **PIR Reviewer**:
 The single person who approves a PIR before publication, usually the team manager. It cannot be the Author or the Incident Lead.
 
+**Viewer**:
+A read-only user.
+
+**Admin**:
+A user who manages users, settings, templates, mappings and integrations.
+
 **Public PDF**:
 The shareable rendering of a PIR, containing only its public sections. It is published to SharePoint and linked from Status.io.
 
@@ -77,6 +83,12 @@ The final state of a PIR that an Approver decided is not needed, with a recorded
 
 **Draft Incident**:
 An Incident created automatically from a PagerDuty webhook, which an engineer has not yet confirmed.
+
+**Correlation Window**:
+The time within which new PagerDuty incidents on the same service and Network Elements are grouped into one Draft or Incident.
+
+**NOC Channel**:
+The internal Slack channel where Outage Manager posts operational alerts.
 
 **Status Page Notice**:
 A message published to Status.io (an incident, a scheduled maintenance, an update to either, or a PIR link) that Status.io delivers to subscribers.
