@@ -14,10 +14,32 @@ Unplanned degradation or loss of service.
 _Avoid_: outage (as a record type), event
 
 **Outage**:
-An impact level meaning full loss of service. It is not a record type.
+The Impact Level OUTAGE, meaning full loss of service. It is not a record type.
 
 **Impact**:
 The set of Services and Customers affected by a Maintenance or Incident, derived from the Network Elements involved.
+
+**Impact Level**:
+NO-IMPACT, REDUCED-REDUNDANCY, DEGRADED or OUTAGE, assessed for each affected Service.
+
+**Priority**:
+The urgency/severity of an Incident, P1 (highest) to P4. It is separate from Impact.
+_Avoid_: SEV, severity level
+
+**Incident Lead**:
+The one person accountable for running an Incident. The role can be handed over.
+
+**Participant**:
+Anyone else working on an Incident.
+
+**Outcome**:
+The recorded result of a completed Maintenance: Successful, Partially successful, Rolled back, or Failed.
+
+**Dismissed**:
+The final state of a Draft Incident that turned out not to be a real Incident.
+
+**Notice Period**:
+The minimum advance notice (5 NZ business days) expected before any Maintenance.
 
 **Network Element**:
 A device, interface or circuit recorded in Boris.
