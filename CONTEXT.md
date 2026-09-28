@@ -48,11 +48,26 @@ A device, interface or circuit recorded in Boris.
 A Service is delivered over Network Elements. The Customer is who owns it.
 
 **Post-Incident Report (PIR)**:
-A written analysis of an Incident that Reviewers must approve before it is published.
+A written analysis of an Incident that its Reviewer must approve before it is published.
 _Avoid_: post-mortem (acceptable as the public-facing name on Status.io), RCA
 
 **Author / Reviewer / Approver**:
-The Author writes a Maintenance, Incident or PIR. A Reviewer is chosen by the Author to approve a PIR, and every Reviewer must approve. An Approver signs off a Maintenance, and one is enough.
+The Author writes a Maintenance, Incident or PIR. A PIR has exactly one Reviewer, who approves it before publication. An Approver signs off a Maintenance, and one is enough.
+
+**PIR Reviewer**:
+The single person who approves a PIR before publication, usually the team manager. It cannot be the Author or the Incident Lead.
+
+**Public PDF**:
+The shareable rendering of a PIR, containing only its public sections. It is published to SharePoint and linked from Status.io.
+
+**Internal PDF**:
+The full rendering of a PIR, including internal sections.
+
+**Action Item**:
+A follow-up task arising from a PIR, with an owner and a due date.
+
+**Waived**:
+The final state of a PIR that an Approver decided is not needed, with a recorded reason.
 
 **Draft Incident**:
 An Incident created automatically from a PagerDuty webhook, which an engineer has not yet confirmed.
